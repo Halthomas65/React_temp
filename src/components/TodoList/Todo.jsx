@@ -1,4 +1,5 @@
 import React from 'react'
+import './Todo.css'
 
 const Todo = ({ todo, deleteTodo, markTodoAsDone, editTodo }) => {
     const handleEdit = () => {
@@ -10,7 +11,9 @@ const Todo = ({ todo, deleteTodo, markTodoAsDone, editTodo }) => {
 
     return (
         <div>
-            - {todo.text} 
+            <span className={todo.done ? 'done' : ''}>
+                - {todo.text}
+            </span>
             <button onClick={() => deleteTodo(todo.id)}>x</button>
             <button onClick={() => markTodoAsDone(todo.id)}>
                 {todo.done ? 'Undo' : 'Done'}

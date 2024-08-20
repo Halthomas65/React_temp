@@ -46,14 +46,4 @@ export default function TodoList() {
         </div>
     )
 
-//     useEffect(() => {
-//         // update todo list
-//     },[todos]);
-// // props, state
-//     return (
-//         <div>
-//            <InputTodo todos={todos} setTodos={setTodos}/>
-//             <Todos todos={todos} setTodos={setTodos}/>
-//         </div>
-//     )
 }
