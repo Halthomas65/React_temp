@@ -1,62 +1,14 @@
-
-import React from 'react'
-import ReactDOM from 'react-dom'
-// import Textfield from "@atlaskit/textfield";
-// import Button from "@atlaskit/button";
+import Retool from 'react-retool';
+import React from 'react';
 
 function App() {
-  // getData();
-  return<></>
+  // const sample = { name: 'Sample data' }
+  return (
+    <Retool
+      url="https://shecomvn.retool.com/embedded/public/a95eef5e-e6d6-40f1-9270-34d343aaadb0"
+      // data={sample}
+    />
+  );
 }
 
 export default App;
-
-// async function getData() {
-//   const url = "https://jsonplaceholder.typicode.com/posts";
-//   try {
-//     const response = await fetch(url);
-//     if (!response.ok) {
-//       throw new Error(`Response status: ${response.status}`);
-//     }
-//     const posts = await response.json();
-
-//     // Get the container where posts will be displayed
-//     const container = document.getElementById('posts-container');
-
-//     // Clear previous content (if any)
-//     container.innerHTML = '';
-
-//     // Iterate over the posts and create HTML elements for each
-//     posts.forEach(post => {
-//       // Create a div for each post
-//       const postDiv = document.createElement('div');
-//       postDiv.className = 'post';
-
-//       // Create a title element
-//       const title = document.createElement('div');
-//       title.className = 'post-title';
-//       title.textContent = post.title;
-
-//       // Create a body element
-//       const body = document.createElement('div');
-//       body.className = 'post-body';
-//       body.textContent = post.body;
-
-//       // Append title and body to the post div
-//       postDiv.appendChild(title);
-//       postDiv.appendChild(body);
-
-//       // Append the post div to the container
-//       container.appendChild(postDiv);
-//     });
-//   } catch (error) {
-//     console.error(error.message);
-//   }
-//   return <div>
-//     <body>
-//       <div id="posts-container"></div>
-//       <script src="app.js"></script>
-//     </body>
-
-//   </div>;
-// }
